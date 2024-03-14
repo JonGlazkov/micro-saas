@@ -10,7 +10,12 @@ export function DashboardPageHeader({
   className,
 }: ComponentsGenericProps) {
   return (
-    <header className={cn(['px-6 py-5 border-b border-border', className])}>
+    <header
+      className={cn([
+        'flex items-center justify-between px-6 h-16 border-b border-border',
+        className,
+      ])}
+    >
       {children}
     </header>
   )
